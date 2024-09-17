@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú del Restaurante</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Estilos para el encabezado y la barra de navegación */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        /* Estilos para el contenido del menú */
+        .container {
+            padding: 2em;
+        }
+
+        .menu-section {
+            margin-bottom: 2em;
+        }
+
+        .menu-section h2 {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em;
+            border-radius: 5px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .item-name {
+            font-weight: bold;
+        }
+
+        .item-price {
+            color: #4CAF50;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Maid Cafe Formosa</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Menú</a></li>
+            <li><a href="#">Reservas</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="menu-section">
+            <h2>Cafetería</h2>
+            <div class="menu-item">
+                <span class="item-name">★ Corn dogs</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Pizzetas</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Mini empanadas (de jamón y queso)</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Chipitas (porción de 5 unidades)</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Dorayakis</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Torta Nana (Por porción)</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Torta Fyolai (Por porción)</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Toriel Butterscotch pie (Por porción)</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Sanguiches de miga o Carlitos</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Galletitas</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Brownies</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Cupcakes</span>
+                <span class="item-price">$0.00</span>
+            </div>
+        </div>
+        <div class="menu-section">
+            <h2>Extras!!</h2>
+            <div class="menu-item">
+                <span class="item-name">★ Puflitos</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Chizitos</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Tutucas</span>
+                <span class="item-price">$0.00</span>
+            </div>
+        </div>
+        <div class="menu-section">
+            <h2>Bebidas!!</h2>
+            <div class="menu-item">
+                <span class="item-name">★ Café (con o sin espuma)</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Té</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Mate cocido</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Chocolatada</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Hot cocoa</span>
+                <span class="item-price">$0.00</span>
+            </div>
+        </div>
+        <div class="menu-section">
+            <h2>Bubble tea ૮꒰ ˶• ༝ •˶꒱ა</h2>
+            <div class="menu-item">
+                <span class="item-name">★ Con café</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Básico (té)</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Durazno (con o sin leche)</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Frutilla (con o sin leche)</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Vainilla</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Chocolate</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Caramelo</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Taro</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Coco</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Matcha</span>
+                <span class="item-price">$0.00</span>
+            </div>
+        </div>
+        <div class="menu-section">
+            <h2>Combos</h2>
+            <div class="menu-item">
+                <span class="item-name">★ Un café + 6 chipitas</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Un bubble tea + 2 cupcakes + 1 galletita</span>
+                <span class="item-price">$0.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Una chocolatada + 3 brownies</span>
+                <span class="item-price">$0.00</span>
+            </div>
+
+    </div>
+    <footer>
+        <p>2024 Maid Cafe Formosa&trade;.</p>
+    </footer>
+</body>
+</html>

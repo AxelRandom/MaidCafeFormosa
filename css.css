@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Bubble';
+    src: url('Fonts/Bubbleboddy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Arial, sans-serif;
+    src: url('Fonts/arial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Bubble', sans-serif;
+}

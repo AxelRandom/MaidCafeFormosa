@@ -118,7 +118,6 @@
 
     <style>
         body {
-            // background-image: url('Images/Background.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -130,7 +129,7 @@
         const mesActual = fechaActual.getMonth(); // Enero es 0, Octubre es 9
 
         // Seleccionar la imagen según el mes
-        const fondo = mesActual === 9 ? 'Images/Sakura.jpg' : 'Images/Background.jpg'; // Cambia los nombres de las imágenes según tus archivos
+        const fondo = mesActual === 9 ? 'Image/PupleBackground.png' : 'Images/PinkBackground.png'; // Cambia los nombres de las imágenes según tus archivos
 
         // Asignar la imagen de fondo al body
         document.body.style.backgroundImage = `url(${fondo})`;

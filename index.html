@@ -117,11 +117,15 @@
                 float: none;
             }
         }
+        .imagen-expandida {
+            width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+            max-width: 800px; /* Opcional: limita el ancho máximo de la imagen */
+            height: auto; /* Mantiene la proporción de la imagen */
+        }
     </style>
 </head>
 <body>
     <style>
-        
         body {
             background-size: cover;
             background-position: center;
@@ -161,6 +165,7 @@
             <li><a href="#" onclick="mostrarSeccion('menu')">Menú</a></li>
             <li><a href="#" onclick="mostrarSeccion('reserva')">Reservas</a></li>
             <li><a href="#" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+            <li><a href="#" onclick="mostrarSeccion('eventos')">Eventos</a></li>
         </ul>
     </nav>
     <div class="container">
@@ -354,6 +359,9 @@
         <div id="inicio" class="menu-section">
             <h2>Terminos y Condiciones!!</h2>
             <div class="menu-item">
+                <span class="item-name">★ Se le dara diez minutos de espera apartir de la apertura del evento si reserva una mesa pasado ese tiempo debera esperar a que se desocupe una nueva mesa (no hay devolucion del importe)</span>
+            </div>
+            <div class="menu-item">
                 <span class="item-name">★ Al asistir a nuestro evento usted acepta nuestros términos y condiciones</span>
             </div>
             <div class="menu-item">
@@ -372,7 +380,7 @@
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Mesas Standar</span>
-                <span class="item-price">30</span>
+                <span class="item-price">28</span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Entrada</span>
@@ -390,6 +398,12 @@
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Cualquier inconveniento o para la adquicision de la entrada comuniquece mediante nuestras redes</span>
+            </div>
+        </div>
+        <div id="eventos" class="menu-section">
+            <h2>Nuestros eventos!!</h2>
+            <div class="menu-item">
+                <img src="Images/EventosBackGround.png" alt="Descripción de la imagen" class="imagen-expandida">
             </div>
         </div>
     </div>

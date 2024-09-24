@@ -89,6 +89,11 @@
             font-family: Arial, sans-serif;
         }
 
+        .item-gmail {
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
         .number-color {
             color: #ffffff;
             font-family: Arial, sans-serif;
@@ -115,14 +120,13 @@
     </style>
 </head>
 <body>
-
     <style>
+        
         body {
             background-size: cover;
             background-position: center;
         }
     </style>
-
     <script>
         // Obtener la fecha actual
         const fechaActual = new Date();
@@ -133,171 +137,252 @@
 
         // Asignar la imagen de fondo al body
         document.body.style.backgroundImage = `url(${fondo})`;
-    </script>
 
+        function mostrarSeccion(seccionId) {
+            // Ocultar todas las secciones
+            const secciones = document.querySelectorAll('.menu-section');
+            secciones.forEach(seccion => seccion.style.display = 'none');
+
+            // Mostrar la sección seleccionada
+            document.getElementById(seccionId).style.display = 'block';
+        }
+
+        // Mostrar la primera sección al cargar
+        window.onload = function() {
+            mostrarSeccion('inicio'); // Muestra la sección de Cafetería por defecto
+        };
+    </script>
     <header>
         <h1>Maid Cafe Formosa</h1>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="mostrarSeccion('inicio')">Inicio</a></li>
+            <li><a href="#" onclick="mostrarSeccion('menu')">Menú</a></li>
+            <li><a href="#" onclick="mostrarSeccion('reserva')">Reservas</a></li>
+            <li><a href="#" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+        </ul>
+    </nav>
     <div class="container">
-        <div class="menu-section">
+        <div id="menu" class="menu-section">
             <h2>Cafetería</h2>
             <div class="menu-item">
                 <span class="item-name">★ Corn dogs</span>
-                <span class="item-price">$0.00</span>
+                <span class="item-price"><!--$0.00--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Pizzetas</span>
-                <span class="item-price">$0.00</span>
+                <span class="item-price"><!--$0.00--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Mini empanadas (de jamón y queso)</span>
-                <span class="item-price">$0.00</span>
+                <span class="item-price"><!--$0.00--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Chipitas (porción de cinco unidades)</span>
-                <span class="item-price">$1.500</span>
+                <span class="item-price"><!--$1.500--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Dorayakis</span>
-                <span class="item-price">$1.000</span>
+                <span class="item-price"><!--$1.000--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Torta Nana (Por porción)</span>
-                <span class="item-price">$1.700</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">★ Torta Fyolai (Por porción)</span>
-                <span class="item-price">$2.600</span>
+                <span class="item-price"><!--$1.700--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Toriel Butterscotch pie (Por porción)</span>
-                <span class="item-price">$2.000</span>
+                <span class="item-price"><!--$2.000--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Sanguiches de miga o Carlitos</span>
-                <span class="item-price">$0.00</span>
+                <span class="item-price"><!--$0.00--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Galletitas</span>
-                <span class="item-price">$0.00</span>
+                <span class="item-price"><!--$0.00--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Brownies</span>
-                <span class="item-price">$0.00</span>
+                <span class="item-price"><!--$0.00--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Cupcakes</span>
-                <span class="item-price">$0.00</span>
+                <span class="item-price"><!--$0.00--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Bizcochuelo</span>
-                <span class="item-price">$800</span>
+                <span class="item-price"><!--$800--></span>
             </div>
-        </div>
-        <div class="menu-section">
             <h2>Extras!!</h2>
             <div class="menu-item">
                 <span class="item-name">★ Puflitos</span>
-                <span class="item-price">$0.00</span>
+                <span class="item-price"><!--$0.00--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Chizitos</span>
-                <span class="item-price">$0.00</span>
+                <span class="item-price"><!--$0.00--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Tutucas</span>
-                <span class="item-price">$0.00</span>
+                <span class="item-price"><!--$0.00--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Agua caliente</span>
-                <span class="item-price">$500</span>
+                <span class="item-price"><!--$500--></span>
             </div>
-        </div>
-        <div class="menu-section">
             <h2>Bebidas!!</h2>
             <div class="menu-item">
                 <span class="item-name">★ Café (con o sin espuma)</span>
-                <span class="item-price">$0.00</span>
+                <span class="item-price"><!--$0.00--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Té</span>
-                <span class="item-price">$0.00</span>
+                <span class="item-price"><!--$0.00--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Mate cocido</span>
-                <span class="item-price">$0.00</span>
+                <span class="item-price"><!--$0.00--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Chocolatada</span>
-                <span class="item-price">$0.00</span>
+                <span class="item-price"><!--$0.00--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Hot cocoa</span>
-                <span class="item-price">$0.00</span>
+                <span class="item-price"><!--$0.00--></span>
             </div>
-        </div>
-        <div class="menu-section">
             <h2>Bubble tea ૮꒰ ˶• ༝ •˶꒱ა</h2>
             <div class="menu-item">
                 <span class="item-name">★ Con café</span>
-                <span class="item-price">$1.300</span>
+                <span class="item-price"><!--$1.300--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Básico (té)</span>
-                <span class="item-price">$1.300</span>
+                <span class="item-price"><!--$1.300--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Durazno (con o sin leche)</span>
-                <span class="item-price">$1.300</span>
+                <span class="item-price"><!--$1.300--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Frutilla (con o sin leche)</span>
-                <span class="item-price">$1.300</span>
+                <span class="item-price"><!--$1.300--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Vainilla</span>
-                <span class="item-price">$1.300</span>
+                <span class="item-price"><!--$1.300--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Chocolate</span>
-                <span class="item-price">$1.300</span>
+                <span class="item-price"><!--$1.300--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Caramelo</span>
-                <span class="item-price">$1.300</span>
+                <span class="item-price"><!--$1.300--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Taro</span>
-                <span class="item-price">$1.300</span>
+                <span class="item-price"><!--$1.300--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Coco</span>
-                <span class="item-price">$1.300</span>
+                <span class="item-price"><!--$1.300--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Matcha</span>
-                <span class="item-price">$1.300</span>
+                <span class="item-price"><!--$1.300--></span>
             </div>
-        </div>
-        <div class="menu-section">
             <h2>Combos</h2>
             <div class="menu-item">
                 <span class="item-name">★ Un café + seis chipitas</span>
-                <span class="item-price">$0.00</span>
+                <span class="item-price"><!--$0.00--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Un bubble tea + dos cupcakes + una galletita</span>
-                <span class="item-price">$0.00</span>
+                <span class="item-price"><!--$0.00--></span>
             </div>
             <div class="menu-item">
                 <span class="item-name">★ Una chocolatada + tres brownies</span>
-                <span class="item-price">$0.00</span>
+                <span class="item-price"><!--$0.00--></span>
             </div>
-
+        </div>
+        <div id="reserva" class="menu-section">
+            <h2>Reservacion!!</h2>
+            <div class="menu-item">
+                <span class="item-name">★ Mesas V.I.P (cita de veinte minutos)</span>
+                <span class="item-price">$6.000</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Mesas Standar (cita de diez minutos)</span>
+                <span class="item-price">$3.000</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Entrada</span>
+                <span class="item-price">$1.000</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Para reservas contáctanos mediante nuestras redes en el apartado de Contacto</span>
+            </div>
+            <h2>Maids y Mayordomos!!</h2>
+            <div class="menu-item">
+                <span class="item-name">★ Karen</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Fran</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Juli</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Brian</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Brisa</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Santiago</span>
+            </div>
+            <h2>Maids V.I.P!!</h2>
+            <div class="menu-item">
+                <span class="item-name">★ Cecy</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Ivis</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Justty</span>
+            </div>
+        </div>
+        <div id="inicio" class="menu-section">
+            <h2>Terminos y Condiciones!!</h2>
+            <div class="menu-item">
+                <span class="item-name">★ Al asistir a nuestro evento usted acepta nuestros términos y condiciones</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Completo respeto al personal, no tocar sin consentimiento, respetar el espacio personal, pedir fotos educadamente, no acosar al personal, no insultar a nadie del staff</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Siendo V.I.P se compromete ante su decición de la forma de antención al cliente solicitada por el mismo</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ En caso de solicitar un maltrato se compromete a tratar con respeto al mayordomo o a la maid ya que el trato solicitado es hacía el cliente</span>
+            </div>
+        </div>
+        <div id="contacto" class="menu-section">
+            <h2>contactanos:</h2>
+            <div class="menu-item">
+                <span class="item-name">★ Instagram</span>
+                <span class="item-gmail">maid_cafe_formosa</span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">★ Gmail</span>
+                <span class="item-gmail">maidcafeformosa@gmail.com</span>
+            </div>
+        </div>
     </div>
     <footer>
         <p><span class="number-color">2024</span> Maid Cafe Formosa&trade;.</p>
     </footer>
 </body>
-
 </html>
